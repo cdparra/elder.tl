@@ -1,0 +1,33 @@
+[{
+  "id": 1,
+  "name": "Fiebbre Trentina",
+  "description": "Group of people from Trento",
+  "picture_url": "",
+  "website": "",
+  "opening_hours": "",   
+  "email": "",
+  "phone": "",
+  "place": "Trento, Italy"
+},
+{
+  "id": 2,
+  "name": "Let's movie!",
+  "description": "Group of moviers from Trento",
+  "picture_url": "",
+  "website": "",
+  "opening_hours": "",   
+  "email": "",
+  "phone": "",
+  "place": "Trento, Italy"
+},
+{
+  "id": 3,
+  "name": "Opera Universitaria",
+  "description": "Organization supporting students of University of Trento",
+  "picture_url": "",
+  "website": "",
+  "opening_hours": "",   
+  "email": "",
+  "phone": "",
+  "place": "Trento, Italy"
+}]
