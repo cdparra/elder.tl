@@ -1,33 +1,24 @@
 [{
   "id": 1,
-  "name": "Fiebbre Trentina",
-  "description": "Group of people from Trento",
-  "picture_url": "",
-  "website": "",
-  "opening_hours": "",   
-  "email": "",
-  "phone": "",
-  "place": "Trento, Italy"
+  "name": "Ygnacio",
+  "lastname": "Parra",
+  "picture_url": "https://dl.dropbox.com/u/2797542/timeline/person/1.JPG",   
+  "email": "ygnacio.parra@gmail.com",
+  "member_name": "ygnacio.parra"
 },
 {
   "id": 2,
-  "name": "Let's movie!",
-  "description": "Group of moviers from Trento",
-  "picture_url": "",
-  "website": "",
-  "opening_hours": "",   
+  "name": "Ugo",
+  "lastname": "Fantozzi",
+  "picture_url": "https://dl.dropbox.com/u/2797542/timeline/person/2.JPG",   
   "email": "",
-  "phone": "",
-  "place": "Trento, Italy"
+  "member_name": "ugo.fantozzi"
 },
 {
   "id": 3,
-  "name": "Opera Universitaria",
-  "description": "Organization supporting students of University of Trento",
-  "picture_url": "",
-  "website": "",
-  "opening_hours": "",   
+  "name": "Bruno",
+  "lastname": "Kessler",
+  "picture_url": "https://dl.dropbox.com/u/2797542/timeline/person/3.JPG",   
   "email": "",
-  "phone": "",
-  "place": "Trento, Italy"
+  "member_name": "bruno.kessler"
 }]
