@@ -1,5 +1,7 @@
 body {
-	background: #EDEAE2;
+    <!--background: #EDEAE2;-->
+    background-repeat: repeat;
+    background-image: url(../img/pattern.png);
 }
 
 div.clear 
