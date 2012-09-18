@@ -1,8 +1,8 @@
 /**
- * CA is the main variable of ComeAlong (called: our application), it contains
- * the dynamic structure of our application.
+ * The dynamic structure of Reminiscens' application is inside the variable 
+ * RE including routers, collections, models, views, etc. 
  */
-var CA = {
+var RE = {
 	Auth : {},
 	URL : {},
 	Lang : {},
@@ -14,14 +14,13 @@ var CA = {
 	Helpers : {},
 
 	init : function() {		
-		new CA.Routers.Home();
-		
+		new RE.Routers.Home();	
 		Backbone.history.start();
 	}
 };
 
-CA.URL.Event = "api/event/{0}";
-CA.URL.EventList = "api/event.json";
+RE.URL.Person = "api/person/{0}";
+RE.URL.PersonList = "api/person.json";
 
-CA.URL.Organizer = "api/organizer/{0}";
-CA.URL.OrganizerList = "api/organizer.json";
+RE.URL.Memento = "api/memento/{0}";
+RE.URL.OrganizerList = "api/memento.json";
