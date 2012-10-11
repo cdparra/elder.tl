@@ -1,4 +1,4 @@
-CA.Views.Home = Backbone.View.extend({
+RE.Views.Home = Backbone.View.extend({
 
 	initialize : function() {
 		
@@ -8,57 +8,44 @@ CA.Views.Home = Backbone.View.extend({
 	},
 
 	render : function() {
-		this._renderSkeleton();
-		this._loadEvents();
-		this._loadGroups();
+		this._renderHeader();
 	},
 
 	/* Helpers. */
 
-	_renderSkeleton : function() {
+	_renderHeader : function() {
 		var self = this;
 
 		var html = new EJS({
-			url : './scripts/ejs/skeleton.ejs'
+			url : './resources/ejs/navbar.ejs'
 		}).render();
 
 		$(this.el).html(html);
+	}
+});
+
+
+RE.Views.RegisterForm = Backbone.View.extend({
+
+	initialize : function() {
 	},
 
-	_loadEvents : function() {
-		var self = this;
-		var events = new CA.Collections.EventList();
-
-		events.fetch({
-			success : function(collection) {
-				var html = new EJS({
-					url : './scripts/ejs/events.ejs'
-				}).render({
-					collection : collection.toJSON()
-				});
-
-				$(self.el).find('.events').html(html);				
-				
-			}
-		});
+	events : {
 	},
-	
-	_loadGroups : function() {
+
+	render : function() {
+		this._renderRegisterForm();
+	},
+
+	/* Helpers. */
+
+	_renderRegisterForm : function() {
 		var self = this;
-		var organizer = new CA.Collections.OrganizerList();
 
-		organizer.fetch({
-			success : function(collection) {
-				var html = new EJS({
-					url : './scripts/ejs/groups.ejs'
-				}).render({
-					collection : collection.toJSON()
-				});
+		var html = new EJS({
+			url : './resources/ejs/register.ejs'
+		}).render();
 
-				$(self.el).find('.groups').html(html);				
-				
-			}
-		});
-	}	
-
+		$(this.el).html(html);
+	}
 });

@@ -10,7 +10,24 @@ h1 {
 	color: white;
 	font-size: 60px;
 	font-weight:100;
-	font-family: 'Merienda One', cursive;
+	font-family: 'FertigoPro-Regular', cursive;
+	
+}
+
+h2 {
+	color: white;
+	font-size: 24px;
+	font-weight:100;
+	font-family: 'FertigoPro-Regular', cursive;
+	
+}
+
+h2 {
+	color: gray;
+	font-size: 20px;
+	font-weight:100;
+	font-family: 'FertigoPro-Regular';
+	
 }
 
 p {
@@ -18,9 +35,9 @@ p {
 }
 
 .container {
-	margin-top: 100px;
+	margin-top: 0px;
 	text-align:center;
-	padding: 40px;
+	padding: 25px;
 }
 
 .btn {
@@ -31,4 +48,12 @@ p {
 
 .bot {
 	color : white;
+}
+
+img.logo {
+    max-width : 70%;
+}
+
+img.logosmall {
+    max-width : 50%;
 }

@@ -1,20 +1,30 @@
-CA.Routers.Home = Backbone.Router.extend({
+RE.Routers.Home = Backbone.Router.extend({
 	routes : {
-		"/" : "displayHome",
+		"/start" : "startProfile",
+		"/explore" : "exploreTimeline",
 		"*path"	: "notFound"
 			
 	},
 	
-	displayHome : function() {
+	startProfile : function() {
+		console.log("home start profile");
+		var header = new RE.Views.Home({
+			el : '#header'
+		});
 		
-		console.log("display");
+		header.render();
+		_displayRegisterForm();
 		
-		var home = new CA.Views.Home({
-			el : '.page'
+	},
+
+	_displayRegisterForm : function() {
+		console.log("display register form");
+		
+		var home = new RE.Views.RegisterForm({
+			el : '#reIndex'
 		});
 		
 		home.render();
-		
 	},
 	
 	notFound : function() {
