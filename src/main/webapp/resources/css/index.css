@@ -22,7 +22,7 @@ h2 {
 	
 }
 
-h2 {
+h3 {
 	color: gray;
 	font-size: 20px;
 	font-weight:100;
@@ -31,14 +31,21 @@ h2 {
 }
 
 p {
-	margin : 30px;
+	margin : 10px;
 }
 
 .container {
 	margin-top: 0px;
 	text-align:center;
-	padding: 25px;
+	padding: 5px;
 }
+
+.container#reHeader {
+	margin-top: 0px;
+	text-align:center;
+	padding: 5px;
+}
+
 
 .btn {
 	font-size: 20px;
