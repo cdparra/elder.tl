@@ -1,7 +1,7 @@
 RE.Routers.Home = Backbone.Router.extend({
 	routes : {
 		"/" : "displayHome",
-		"/start" : "startProfile"
+		"/start" : "startProfile",
 		"*path"	: "notFound"
 			
 	},

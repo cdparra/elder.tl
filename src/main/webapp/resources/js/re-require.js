@@ -16,10 +16,10 @@ require.config({
         backbone: 'lib/backbone-min',
         ejs: 'lib/ejs_production',
         timelinejs: 'lib/timelines/timelinejs/js/timeline-min',
-        datepicker: 'lib/datepicker/js/bootstrap-datepicker',
+        datepicker: 'lib/datepicker/js/bootstrap-datepicker'
         
         /*utilities: 'app/utilities',*/
-        router
+        //router
     }
 });
 
