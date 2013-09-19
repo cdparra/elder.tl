@@ -29,6 +29,7 @@
     <script type="text/javascript" src="resources/js/lib/ejs_production.js"></script>
     <script type="text/javascript" src="resources/js/lib/underscore-min.js"></script>
     <script type="text/javascript" src="resources/js/lib/backbone-min.js"></script>
+    <script type="text/javascript" src="resources/js/lib/jquery.smooth-scroll.min.js"></script> 
        
 </head>
 
@@ -60,6 +61,39 @@
 }(document, 'script', 'facebook-jssdk'));
 </script>
 
+ <script>
+    $(document).ready(function() {
+
+      $('ul.nav a').smoothScroll();
+
+      $('p.subnav a').click(function(event) {
+        event.preventDefault();
+        var link = this;
+        $.smoothScroll({
+          scrollTarget: link.hash
+        });
+      });
+
+      $('button.scrollsomething').click(function() {
+        $.smoothScroll({
+          scrollElement: $('div.scrollme'),
+          scrollTarget: '#findme'
+        });
+        return false;
+      });
+      $('button.scrollhorz').click(function() {
+        $.smoothScroll({
+          direction: 'left',
+          scrollElement: $('div.scrollme'),
+          scrollTarget: '.horiz'
+        });
+        return false;
+      });
+
+    });
+
+  </script>
+
 
 <div class="container" id="reHeader">
     <div class="row">
@@ -71,7 +105,8 @@
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                     </button>
-                    <a class="brand" href="#">Introduction</a>
+            
+            <a class="brand" href="#">Introduction</a>
 		    <div class="nav-collapse collapse">
 	                <ul class="nav">
                             <li class="">
