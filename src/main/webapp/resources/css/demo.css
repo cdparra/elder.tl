@@ -78,6 +78,12 @@ p {
 }
 
 
+.container#headerSpace {
+	height: 50px;
+	text-align:center;
+	padding: 5px;
+}
+
 .btn {
 	font-size: 20px;
 	margin-right: 10px;
